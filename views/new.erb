@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Submit to Slacker News</title>
+    <link rel="stylesheet" href="/submit.css">
+  </head>
+
+  <body>
+    <p>Here you can submit your article for Slacker News</p>
+
+    <form action = "/slackernews/new" method ='post'>
+    <br>
+      <label for ="title">Article Title</label>
+      <input type = 'text' id = 'title' name = "title">
+    </br>
+
+    <br>
+     <label for ="url">Article Link</label>
+     <input type = "text" id = 'url' name = 'url'>
+    </br>
+
+    <br>
+      <label for ="content">Article Description</label>
+      <input type = 'text' id = 'content' name = "content">
+    </br>
+
+    <br>
+      <input type = 'submit'>
+    </br>
+
+
+    </form>
+
+    <p><a href="/slackernews/articles">Go to your articles</a></p>
+
+
+
+  </body>
+
+</html>

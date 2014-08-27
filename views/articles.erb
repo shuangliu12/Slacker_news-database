@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Your Articles</title>
+    <link rel="stylesheet" href="submit.css">
+  </head>
+
+  <body>
+    <h4>Here are the articles that you have submitted:</h4>
+
+    <% @articles.each do |article| %>
+      <li>Title: <%= article['title']%>, Link:
+        <a href="https://<%=article['url']%>"><%=article['url']%></a>, A brief description: <%= article['description']%>.</li>
+    <% end %>
+
+    <a href="/slackernews">Go back to Slackernews</a>
+
+
+  </body>
+
+</html>
